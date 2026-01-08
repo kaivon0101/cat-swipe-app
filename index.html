@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat Swipe App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <h1>Find Your Perfectttt Cat 😺</h1>
+
+  <!-- Instructions -->
+  <p class="instructions">
+    👉 Swipe right to <b>Like</b> &nbsp;|&nbsp;
+    👈 Swipe left to <b>Skip</b> <br/>
+    🖱️ Click a favorite image in the Favorites tab to remove it
+  </p>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button id="chooseTab">Choose</button>
+    <button id="favTab">Favorites ⭐ (<span id="fav-count">0</span>)</button>
+    <button id="refreshBtn">🔄 Refresh</button>
+  </div>
+
+  <!-- Swipe Section -->
+  <div id="card-container"></div>
+
+  <!-- Favorites Section -->
+  <div id="favorites" class="hidden">
+    <h2>Your Favorites ❤️</h2>
+    <p>Total favorites: <b><span id="fav-total">0</span></b></p>
+    <div id="fav-grid"></div>
+  </div>
+
+  <!-- Summary -->
+  <div id="summary" class="hidden">
+    <h2>You liked <span id="like-count"></span> cats ❤️</h2>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
